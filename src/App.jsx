@@ -5,6 +5,7 @@ import LisaJook from "./pages/LisaJook"
 import HaldaJooke from "./pages/HaldaJooke"
 import Muutujad from "./pages/Muutujad"
 import MuutujadTeine from "./pages/MuutujadTeine"
+import NotFound from "./pages/NotFound"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <Link to="/halda"><button>Halda jooke</button></Link>
     <Link to="/muutujad"><button>Muutujad</button></Link>
     <Link to="/muutujadteine"><button>Muutujad 2</button></Link>
+    <Link to="/notfound"><button>Not Found</button></Link>
 
 
     <Routes>
@@ -25,6 +27,7 @@ function App() {
       <Route path= "/halda" element= {<HaldaJooke/>}/>
       <Route path= "/muutujad" element= {<Muutujad/>}/>
       <Route path= "/muutujadteine" element= {<MuutujadTeine/>}/>
+      <Route path= "/notfound" element= {<NotFound/>}/>
     </Routes>
       
     </>
