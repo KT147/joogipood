@@ -6,6 +6,7 @@ import HaldaJooke from "./pages/HaldaJooke"
 import Muutujad from "./pages/Muutujad"
 import MuutujadTeine from "./pages/MuutujadTeine"
 import NotFound from "./pages/NotFound"
+import Jook from "./pages/Jook"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <Link to="/muutujad"><button>Muutujad</button></Link>
     <Link to="/muutujadteine"><button>Muutujad 2</button></Link>
     <Link to="/notfound"><button>Not Found</button></Link>
+   
 
 
     <Routes>
@@ -28,6 +30,7 @@ function App() {
       <Route path= "/muutujad" element= {<Muutujad/>}/>
       <Route path= "/muutujadteine" element= {<MuutujadTeine/>}/>
       <Route path= "/notfound" element= {<NotFound/>}/>
+      <Route path= "/jook/:number" element= {<Jook/>}/>
     </Routes>
       
     </>
